@@ -10,7 +10,7 @@ ENV APACHE_WEB_ROOT=/var/www/localhost \
     APACHE_GROUP=www-data
 
 # Ampache
-ENV AMPACHE_VER=3.8.3 \
+ENV AMPACHE_VER=5.5.3 \
     AMPACHE_WEB_DIR=${APACHE_WEB_ROOT}/ampache
 
 # MySQL
