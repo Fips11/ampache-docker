@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 MAINTAINER Ingmar Delsink https://github.com/idelsink
 label version="2.0.0" \
       description="Ampache docker image with Linux Alpine"
