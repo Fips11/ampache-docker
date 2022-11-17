@@ -19,6 +19,10 @@ ENV MYSQL_DATA_DIR=/var/lib/mysql \
     MYSQL_PID_FILE=/var/run/mysqld/mysqld.pid \
     MYSQL_PORT=3306 \
     MYSQL_USER=mysql
+    
+RUN apk --no-cache update && \
+    apk add --no-cache \
+    php7-openssl
 
 # update, upgrade and install:
 RUN apk --no-cache update && \
@@ -51,6 +55,8 @@ RUN apk --no-cache update && \
         pwgen \
         supervisor \
         wget
+        
+
 
 WORKDIR /
 
