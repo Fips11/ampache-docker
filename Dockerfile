@@ -23,6 +23,7 @@ ENV MYSQL_DATA_DIR=/var/lib/mysql \
 # update, upgrade and install:
 RUN apk --no-cache update && \
     apk add --no-cache \
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
         apache2 \
         apache2-utils \
         apache2-webdav \
