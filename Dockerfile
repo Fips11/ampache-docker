@@ -22,7 +22,7 @@ ENV MYSQL_DATA_DIR=/var/lib/mysql \
     
 RUN apk --no-cache update && \
     apk add --no-cache \
-    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
     php7-openssl
 
 # update, upgrade and install:
